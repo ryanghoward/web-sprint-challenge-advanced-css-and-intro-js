@@ -23,10 +23,24 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe accessibility on the web to someone new to programming?
+ - I would describe it as enabling websites to have the same or as similar as possible functionality no matter who is consuming it. Whether it be a user's physical disability or the size or capability of the user's device.
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+ a. Alt tags on images - These provide a brief description of an image on your website. If the image can't or won't load on the user's end for whatever reason, the Alt Tag will let them know what the image entails.
+ b. Resizable text - It's vital to use resizable text on your websites so that people who may need to enlarge the text in order to read it can do so. AKA don't size text (or anything for that matter) with pixels. Use rem's or percentages instead.
+ c. Using captions in videos - If a video is on your website, ensure that captions are available so deaf or hearing-impaired people can use your website.
+
 3. How would you explain the concept of a variable to someone new to programming?
+ - A variable is a way to store data in shorthand form in order to have quick access to that data when you need to use it later on in your code.
+
 4. What is the purpose of using functions in code?
+ - Functions are a step up from variables. While variables store data, a function is where we store an entire process the computer runs through. Whenever we want the computer to execute this process we've specified, we "invoke" or "call" our function instead of writing the whole process out each time we need it. We use variable to retrieve data whenever we need it, and we use functions to retrieve processes when we need them.
+
 5. How do you access a key inside of an object inside of an array?
+ - "console.log(arrayName[indexNumber].keyName)"
+ - Plug in the array name into "arrayName"
+ - Then you need to find out at which index of the array the key that you need is. That then plugs into "[indexNumber]"
+ - Next you plug in the name of the key you want to access into ".keyName"
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
