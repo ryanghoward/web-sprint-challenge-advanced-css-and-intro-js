@@ -247,10 +247,16 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(arr) {
-
+ let years = [];
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i].years > "1900-2000"){
+      years.push(arr[i].name);
+    }
+  }
+  return years;
 }
 
-console.log(artists);
+console.log(get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
