@@ -138,8 +138,9 @@ button:hover{
 
 @media (max-width: 500px){
 
-nav, a {
+nav a {
     margin: 5%;
+    /* border: 3px solid teal; */
 }
 
 .title-container div {
@@ -148,19 +149,34 @@ nav, a {
 }
 
 .artists-container {
-    font-size: 1.5rem;
-    margin: auto, 0;
     flex-direction: column;
+    justify-content: spaced-evenly;
     align-items: center;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
-.artists-container .artist img {
-    height: 25rem;
-    width: 25rem;
-    justify-content: center;
-    border: 5px solid orange;
+.artist-container, a {
+    font-size: 1.9rem;
+    align-items: center;
+    margin: 0, 0;
+    /* border: 1px solid blue; */
 }
 
+.artist {
+    /* border: 2px solid purple; */
+    text-align: center;
+    width: 99%;
+}
+
+.artist img {
+    height: 40vw;
+    width: 50vw;
+    /* border: 5px solid orange; */
+}
+
+.artist .bio {
+    /* border: 3px solid yellow; */
+    font-size: 1.1rem;
+}
 
 }
