@@ -81,7 +81,7 @@ const artists = [
   },
   {
     "id": 8,
-    "name": "Vincent van Dough",
+    "name": "Vincent van Gogh",
     "years": "1853 - 1890",
     "genre": "Post-Impressionism",
     "nationality": "Dutch",
@@ -212,13 +212,14 @@ Practice accessing data above by console.log-ing following items:
 
 //(2) Bio of the third artist (2nd index) in the array 
 
-
+console.log(artists[0,1]);
+console.log(artists[2,4]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
 
-
+console.log(artists[8]);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -228,10 +229,9 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(arr, num) {
+  return `the artist at index ${arr[num].id} is ${arr[num].name}`
 }
-
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
