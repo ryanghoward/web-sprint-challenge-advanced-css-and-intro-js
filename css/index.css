@@ -76,6 +76,11 @@ nav{
 nav a{
     color:#626262;
 }
+
+.home {
+    font-weight: bold;
+}
+
 nav span{
     border-left:3px solid #626262;
 
@@ -134,13 +139,22 @@ button:hover{
     width:100%;
 }
 
-/* ------ Media Query ------ */
+/* -------- Media Query -------- */
 
 @media (max-width: 500px){
+
+nav {
+    /* border: 1px solid red; */
+    height: 3.5rem;
+}
 
 nav a {
     margin: 5%;
     /* border: 3px solid teal; */
+}
+
+hr {
+    width: 100vw;
 }
 
 .title-container div {
