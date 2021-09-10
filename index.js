@@ -235,7 +235,7 @@ function getArtistByIndex(arr, num) {
   return `the artist at index ${arr[num].id} is ${arr[num].name}`
 }
 
-console.log(artists, 0);
+console.log(getArtistByIndex(artists, 0));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use get20s to do the following: 
@@ -247,13 +247,13 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(arr) {
- let years = [];
+ let lifeSpan = [];
   for(let i = 0; i < arr.length; i++){
-    if(arr[i].years > "1900-2000"){
-      years.push(arr[i].name);
+    if(arr[i].years >= "1900-200"){
+      lifeSpan.push(arr[i].name);
     }
   }
-  return years;
+  return lifeSpan;
 }
 
 console.log(get20s(artists));
@@ -291,7 +291,7 @@ Use addArtist to do the following:
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
 function addArtist(arr) {
-  arr.push('id: 20, name: Ryan G. Howard, years: 1993 - current day, genre: Web Design, nationality: American, bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam error aliquam aspernatur sapiente praesentium voluptatum accusamus impedit dolore quas. Incidunt nobis ipsa fugit corporis, sit quibusdam. Voluptatibus, provident libero?');
+  arr.push('id: 20, name: Ryan G. Howard, years: 1993 - Current Day, genre: Web Design, nationality: American, bio: Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam error aliquam aspernatur sapiente praesentium voluptatum accusamus impedit dolore quas. Incidunt nobis ipsa fugit corporis, sit quibusdam. Voluptatibus, provident libero?');
   return arr;
 }
 
